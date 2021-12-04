@@ -1,3 +1,4 @@
 <svg class="background">
   <text id="time" />
+  <text class="stats">10,000</text>
 </svg>
