@@ -52,3 +52,7 @@ export function nameOfMonth(i) {
         return "DEC";
     }
 }
+
+export function mapNumber(value, istart, istop, ostart, ostop) {
+  return ostart + (ostop - ostart) * ((value - istart) / (istop - istart));
+}
