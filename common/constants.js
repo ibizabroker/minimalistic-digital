@@ -21,7 +21,8 @@ export const KEY_UI_STATE = "uiState";
 export const KEY_UI_STATE_HEART = "heart";
 export const KEY_UI_STATE_STEPS = "steps";
 export const KEY_UI_STATE_CALS = "cals";
-export const KEY_UI_STATE_FLOORS = "floors"
+export const KEY_UI_STATE_FLOORS = "floors";
+export const KEY_UI_STATE_DIST = "distance";
 
 export const DEFAULT_MODEL = {
   [KEY_COLOR]: "blue",
@@ -31,5 +32,6 @@ export const DEFAULT_MODEL = {
   [KEY_UI_STATE_HEART]: true,
   [KEY_UI_STATE_STEPS]: true,
   [KEY_UI_STATE_CALS]: true,
-  [KEY_UI_STATE_FLOORS]: true
+  [KEY_UI_STATE_FLOORS]: true,
+  [KEY_UI_STATE_DIST]: true
 };

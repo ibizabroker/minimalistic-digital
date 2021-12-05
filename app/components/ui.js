@@ -3,8 +3,16 @@ import Calories from './calories';
 import Floors from './floors';
 import HeartRate from './heartrate';
 import Steps from './steps';
+import Distance from './distance';
 import Connector from './connector';
-import {KEY_COLOR, KEY_UI_STATE, KEY_UI_STATE_CALS, KEY_UI_STATE_FLOORS, KEY_UI_STATE_HEART, KEY_UI_STATE_STEPS} from "./common/constants"
+import {KEY_COLOR, 
+    KEY_UI_STATE,
+    KEY_UI_STATE_HEART, 
+    KEY_UI_STATE_STEPS, 
+    KEY_UI_STATE_CALS, 
+    KEY_UI_STATE_FLOORS, 
+    KEY_UI_STATE_DIST
+} from "./common/constants"
 
 export default class UI {
   static instance = new UI();
@@ -16,6 +24,7 @@ export default class UI {
     this.steps = new Steps();
     this.calories = new Calories();
     this.floors = new Floors();
+    this.distance = new Distance();
 
     document.getElementById('tapzone').onclick = this.onClick.bind(this);
   }
@@ -34,7 +43,7 @@ export default class UI {
 
   onClick() {
     const currentState = Connector.instance.getValue(KEY_UI_STATE);
-    const availableStates = [KEY_UI_STATE_HEART, KEY_UI_STATE_STEPS, KEY_UI_STATE_CALS, KEY_UI_STATE_FLOORS];
+    const availableStates = [KEY_UI_STATE_HEART, KEY_UI_STATE_STEPS, KEY_UI_STATE_CALS, KEY_UI_STATE_FLOORS, KEY_UI_STATE_DIST];
     let enabledStates = [];
 
     availableStates.forEach(state => {
@@ -63,6 +72,7 @@ export default class UI {
         this.steps.stop();
         this.calories.stop();
         this.floors.stop();
+        this.distance.stop();
         break;  
 
       case KEY_UI_STATE_STEPS:
@@ -70,6 +80,7 @@ export default class UI {
         this.steps.start();
         this.calories.stop();
         this.floors.stop();
+        this.distance.stop();
         break;
 
       case KEY_UI_STATE_CALS:
@@ -77,6 +88,7 @@ export default class UI {
         this.steps.stop();
         this.calories.start();
         this.floors.stop();
+        this.distance.stop();
         break;
 
       case KEY_UI_STATE_FLOORS:
@@ -84,12 +96,23 @@ export default class UI {
         this.steps.stop();
         this.calories.stop();
         this.floors.start();
+        this.distance.stop();
+        break;
+
+      case KEY_UI_STATE_FLOORS:
+        this.heartrate.stop();
+        this.steps.stop();
+        this.calories.stop();
+        this.floors.stop();
+        this.distance.start();
+        break;  
     }
     if (newState === undefined) {
       this.heartrate.stop();  
       this.steps.stop();
       this.calories.stop();
       this.floors.stop();
+      this.distance.stop();
     }
     if (save) {
       Connector.instance.setValue(KEY_UI_STATE, newState);
