@@ -15,6 +15,7 @@ export const DATE_FORMATS = [
 export const FILENAME = "minimalistic.txt";
 export const FILETYPE = "json";
 export const KEY_COLOR = "color";
+export const KEY_DISPLAY_SECONDS = "displaySeconds";
 export const KEY_DISPLAY_BATTERY = "displayBattery";
 export const KEY_DATE_FORMAT = "dateFormat";
 export const KEY_UI_STATE = "uiState";
@@ -25,7 +26,8 @@ export const KEY_UI_STATE_FLOORS = "floors";
 export const KEY_UI_STATE_DIST = "distance";
 
 export const DEFAULT_MODEL = {
-  [KEY_COLOR]: "blue",
+  [KEY_COLOR]: "white",
+  [KEY_DISPLAY_SECONDS]: false,
   [KEY_DISPLAY_BATTERY]: true,
   [KEY_DATE_FORMAT]: {selected: 2},
   [KEY_UI_STATE]: KEY_UI_STATE_HEART,

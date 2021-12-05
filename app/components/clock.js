@@ -9,16 +9,23 @@ import {
     DATE_FORMAT_MON_DD,
     DATE_FORMAT_DD_MON,
     KEY_DATE_FORMAT,
+    KEY_DISPLAY_SECONDS
 } from './common/constants';
 
 export default class Clock {
     constructor() {
-        clock.granularity = "minutes";
         this.time = document.getElementById("time");
         this.date = document.getElementById("date");
     }
 
+    setDisplaySeconds(displaySeconds) {
+        clock.granularity = displaySeconds ? 'seconds' : 'minutes';
+        this.txtClockSec.style.opacity = displaySeconds ? 1 : 0;
+    }
+
     init(connector) {
+        this.setDisplaySeconds(connector.getValue(KEY_DISPLAY_SECONDS));
+
         clock.ontick = (evt) => {
             let today = evt.date;
             let hours = today.getHours();
@@ -28,7 +35,9 @@ export default class Clock {
             hours = util.zeroPad(hours);
             }
             let mins = util.zeroPad(today.getMinutes());
+            let secs = util.zeroPad(today.getSeconds());
             this.time.text = `${hours}:${mins}`;
+            this.timeSecs.text = secs;
 
             const date = new Date();
             const dayOfWeek = util.dayOfWeek(date.getDay());
