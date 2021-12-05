@@ -5,7 +5,6 @@ export default class Calories {
   constructor() {
     this.txtCals = document.getElementById("cals");
     this.imgCals = document.getElementById("cals_img");
-    this.gaugeCals = document.getElementById("cals_gauge");
     this.root = document.getElementById('root');
   }
 

@@ -5,10 +5,12 @@ export default class Steps {
   constructor() {
     this.txtSteps = document.getElementById("steps");
     this.imgSteps = document.getElementById("steps_img");
+    this.root = document.getElementById('root');
   }
 
   update() {
     const steps = today.local.steps.toString();
+    const stepIconX = this.root.width - (75) - (18 * steps.length);
     this.txtSteps.text = steps.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     this.imgSteps.x = stepIconX;
   }

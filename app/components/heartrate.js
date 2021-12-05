@@ -1,5 +1,5 @@
 import document from "document";
-import {HeartRateSensor} from "heart-rate";
+import { HeartRateSensor } from "heart-rate";
 
 export default class HeartRate {
   constructor() {
