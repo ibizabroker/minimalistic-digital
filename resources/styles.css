@@ -30,8 +30,9 @@ image {
 }
 
 #battery {
-  font-size: 22;
+  font-size: 18;
   font-family: System-Light;
+  text-length: 32;
   text-anchor: start;
   fill: white;
 }
@@ -39,10 +40,10 @@ image {
 #date {
   font-size: 22;
   font-family: System-Light;
-  text-length: 50;
+  text-length: 32;
   text-anchor: middle;
   x: 50%;
-  y: 30%;
+  y: 30%+15;
   fill: white;
 }
 
