@@ -5,14 +5,15 @@ import HeartRate from './heartrate';
 import Steps from './steps';
 import Distance from './distance';
 import Connector from './connector';
-import {KEY_COLOR, 
+import {
+    KEY_COLOR, 
     KEY_UI_STATE,
     KEY_UI_STATE_HEART, 
     KEY_UI_STATE_STEPS, 
     KEY_UI_STATE_CALS, 
     KEY_UI_STATE_FLOORS, 
     KEY_UI_STATE_DIST
-} from "./common/constants"
+} from "../../common/constants"
 
 export default class UI {
   static instance = new UI();

@@ -9,7 +9,7 @@ export const DATE_FORMATS = [
   DATE_FORMAT_MM_DD_YYYY,
   DATE_FORMAT_DD_MM_YYYY,
   DATE_FORMAT_MON_DD,
-  DATE_FORMAT_DD_MON,
+  DATE_FORMAT_DD_MON
 ];
 
 export const FILENAME = "minimalistic.txt";

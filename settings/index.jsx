@@ -15,6 +15,8 @@ registerSettingsPage(({ settings }) => (
       <Toggle settingsKey="steps" label="Display Steps"/>
       <Toggle settingsKey="heart" label="Display Heart Rate"/>
       <Toggle settingsKey="cals" label="Display Calories"/>
+      <Toggle settingsKey="floors" label="Display Floors"/>
+      <Toggle settingsKey="distance" label="Display Distance"/>
 
       <Select
         label="Date Format"

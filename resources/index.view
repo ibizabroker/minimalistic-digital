@@ -1,4 +1,29 @@
-<svg class="background">
-  <text id="time" />
-  <text class="stats">10,000</text>
+<svg class="background" id="root">
+  <rect id="tapzone" x="0" y="0" width="100%" height="100%" pointer-events="visible" >
+
+    <image id="battery_img" x="12%" y="16" class="colorConfigurable" href="icons/battery_solid_24px.png" />
+    <text id="battery" x="12%+32" y="40" />
+
+    <text id="date" />
+
+    <image id="heartrate_img" class="colorConfigurable" href="icons/stat_hr_open_24px.png" />
+    <text id="heartrate" class="stats" />
+
+    <!-- <arc id="steps_gauge" class="colorConfigurable" /> -->
+    <image id="steps_img" class="colorConfigurable" href="icons/stat_steps_solid_24px.png" />
+    <text id="steps" class="stats" />
+
+    <!-- <arc id="cals_gauge" class="colorConfigurable" /> -->
+    <image id="cals_img" class="colorConfigurable" href="icons/stat_cals_solid_24px.png" />
+    <text id="cals" class="stats" />
+
+    <image id="floors_img" class="colorConfigurable" href="icons/stat_steps_solid_24px.png" />
+    <text id="floors" class="stats" />
+
+    <image id="distance_img" class="colorConfigurable" href="icons/stat_steps_solid_24px.png" />
+    <text id="distance" class="stats" />
+
+    <text id="time" class="colorConfigurable" />
+    <text id="timeSecs" class="colorConfigurable" />
+  </rect>
 </svg>

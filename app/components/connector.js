@@ -1,5 +1,5 @@
 import * as fs from "fs";
-import {DEFAULT_MODEL, FILENAME, FILETYPE} from "../common/constants";
+import { DEFAULT_MODEL, FILENAME, FILETYPE } from "../../common/constants";
 
 export default class Connector {
   static instance = new Connector();

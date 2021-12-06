@@ -2,7 +2,7 @@ import * as messaging from "messaging";
 import Connector from "./connector";
 import UI from "./ui";
 import Clock from './clock';
-import { KEY_COLOR } from "./common/constants";
+import { KEY_COLOR, KEY_DISPLAY_SECONDS } from "../../common/constants";
 
 export default class Messaging {
   static run() {

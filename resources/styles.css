@@ -14,8 +14,45 @@
 
 .stats {
   font-size: 22;
+  text-length: 32;
   text-anchor: middle;
   x: 50%;
   y: 50%+145;
   fill: white;
+}
+
+image {
+  width: 24;
+  height: 24;
+  text-anchor: middle;
+  x: 50%;
+  y: 70%;
+}
+
+#battery {
+  font-size: 22;
+  font-family: System-Light;
+  text-anchor: start;
+  fill: white;
+}
+
+#date {
+  font-size: 22;
+  font-family: System-Light;
+  text-length: 50;
+  text-anchor: middle;
+  x: 50%;
+  y: 30%;
+  fill: white;
+}
+
+#timeSecs
+{
+  font-family: System-Light;
+  text-anchor: middle;
+  text-length: 32;
+  font-size: 30;
+  fill: white;
+  x: 75%;
+  y: 50%+40;
 }
