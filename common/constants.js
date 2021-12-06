@@ -1,9 +1,9 @@
 export const APP_NAME = 'Minimalistic Digital';
 
-export const DATE_FORMAT_MM_DD_YYYY = '12/31/2021';
-export const DATE_FORMAT_DD_MM_YYYY = '31/12/2021';
-export const DATE_FORMAT_MON_DD = 'DEC 31';
-export const DATE_FORMAT_DD_MON = '31 DEC';
+export const DATE_FORMAT_MM_DD_YYYY = 'MM/DD/YYYY';
+export const DATE_FORMAT_DD_MM_YYYY = 'DD/MM/YYYY';
+export const DATE_FORMAT_MON_DD = 'MON DD';
+export const DATE_FORMAT_DD_MON = 'DD MON';
 
 export const DATE_FORMATS = [
   DATE_FORMAT_MM_DD_YYYY,

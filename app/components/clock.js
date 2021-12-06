@@ -73,7 +73,7 @@ export default class Clock {
                 break;
                 }
             }
-            this.date.text = `${dayOfWeek} ${dateString}`;
+            this.date.text = `${dayOfWeek}, ${dateString}`;
         }
     }
 
