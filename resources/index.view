@@ -6,21 +6,21 @@
 
     <text id="date" />
 
-    <image id="heartrate_img" class="colorConfigurable" href="icons/stat_hr_open_24px.png" />
+    <image id="heartrate_img" class="colorConfigurable" href="icons/heart_rate.png" />
     <text id="heartrate" class="stats" />
 
     <!-- <arc id="steps_gauge" class="colorConfigurable" /> -->
-    <image id="steps_img" class="colorConfigurable" href="icons/stat_steps_solid_24px.png" />
+    <image id="steps_img" class="colorConfigurable" href="icons/steps.png" />
     <text id="steps" class="stats" />
 
     <!-- <arc id="cals_gauge" class="colorConfigurable" /> -->
-    <image id="cals_img" class="colorConfigurable" href="icons/stat_cals_solid_24px.png" />
+    <image id="cals_img" class="colorConfigurable" href="icons/calories.png" />
     <text id="cals" class="stats" />
 
-    <image id="floors_img" class="colorConfigurable" href="icons/stat_steps_solid_24px.png" />
+    <image id="floors_img" class="colorConfigurable" href="icons/floors.png" />
     <text id="floors" class="stats" />
 
-    <image id="distance_img" class="colorConfigurable" href="icons/stat_steps_solid_24px.png" />
+    <image id="distance_img" class="colorConfigurable" href="icons/distance.png" />
     <text id="distance" class="stats" />
 
     <text id="time" class="colorConfigurable" />
