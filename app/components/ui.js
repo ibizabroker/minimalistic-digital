@@ -100,7 +100,7 @@ export default class UI {
         this.distance.stop();
         break;
 
-      case KEY_UI_STATE_FLOORS:
+      case KEY_UI_STATE_DIST:
         this.heartrate.stop();
         this.steps.stop();
         this.calories.stop();
