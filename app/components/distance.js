@@ -10,9 +10,7 @@ export default class Distance {
 
   update() {
     const distance = today.local.distance.toString();
-    const distanceIconX = this.root.width - (75) - (18 * distance.length);
     this.txtDistance.text = distance;
-    this.imgDistance.x = distanceIconX;
   }
 
   hide() {

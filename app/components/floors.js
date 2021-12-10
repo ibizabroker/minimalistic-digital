@@ -10,9 +10,7 @@ export default class Floors {
 
   update() {
     const floors = today.local.elevationGain.toString();
-    const floorsIconX = this.root.width - (75) - (18 * floors.length);
     this.txtFloors.text = floors;
-    this.imgFloors.x = floorsIconX;
   }
 
   hide() {

@@ -10,9 +10,7 @@ export default class Steps {
 
   update() {
     const steps = today.local.steps.toString();
-    const stepIconX = this.root.width - (75) - (18 * steps.length);
     this.txtSteps.text = steps.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-    this.imgSteps.x = stepIconX;
   }
 
   hide() {

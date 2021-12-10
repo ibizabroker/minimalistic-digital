@@ -10,9 +10,7 @@ export default class Calories {
 
   update() {
     const calories = today.local.calories.toString();
-    const calsIconX = this.root.width - (75) - (18 * calories.length);
     this.txtCals.text = calories;
-    this.imgCals.x = calsIconX;
   }
 
   hide() {

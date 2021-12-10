@@ -21,20 +21,55 @@
   fill: white;
 }
 
-image {
-  width: 24;
-  height: 24;
-  text-anchor: middle;
-  x: 50%;
-  y: 70%;
-}
-
 #battery {
   font-size: 18;
   font-family: System-Light;
   text-length: 32;
   text-anchor: start;
   fill: white;
+}
+
+#battery_img {
+  width: 24;
+  height: 24;
+  x: 12%;
+  y: 16;
+  opacity: 1;
+}
+
+#heartrate_img {
+  width: 24;
+  height: 24;
+  x: 50%-11;
+  y: 75%+4;
+}
+
+#steps_img {
+  width: 24;
+  height: 24;
+  x: 50%-11;
+  y: 75%+4;
+}
+
+#cals_img {
+  width: 24;
+  height: 24;
+  x: 50%-11;
+  y: 75%+4;
+}
+
+#floors_img {
+  width: 24;
+  height: 24;
+  x: 50%-11;
+  y: 75%+4;
+}
+
+#distance_img {
+  width: 24;
+  height: 24;
+  x: 50%-11;
+  y: 75%+4;
 }
 
 #date {

@@ -1,11 +1,13 @@
 <svg class="background" id="root">
   <rect id="tapzone" x="0" y="0" width="100%" height="100%" pointer-events="visible" >
 
-    <image id="battery_img" x="12%" y="16" class="colorConfigurable" href="icons/battery_solid_24px.png" />
+    <image id="battery_img" class="colorConfigurable" href="icons/battery_solid_24px.png" />
     <text id="battery" x="12%+29" y="9%+4" />
 
     <text id="date" />
-
+    <text id="time" class="colorConfigurable" />
+    <text id="timeSecs" class="colorConfigurable" />
+    
     <image id="heartrate_img" class="colorConfigurable" href="icons/heart_rate.png" />
     <text id="heartrate" class="stats" />
 
@@ -23,7 +25,5 @@
     <image id="distance_img" class="colorConfigurable" href="icons/distance.png" />
     <text id="distance" class="stats" />
 
-    <text id="time" class="colorConfigurable" />
-    <text id="timeSecs" class="colorConfigurable" />
   </rect>
 </svg>
