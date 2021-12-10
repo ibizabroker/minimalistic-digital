@@ -10,7 +10,7 @@ export default class Calories {
 
   update() {
     const calories = today.local.calories.toString();
-    this.txtCals.text = calories;
+    this.txtCals.text = calories.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   }
 
   hide() {

@@ -10,7 +10,7 @@ export default class Distance {
 
   update() {
     const distance = today.local.distance.toString();
-    this.txtDistance.text = distance;
+    this.txtDistance.text = distance.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   }
 
   hide() {

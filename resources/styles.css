@@ -42,6 +42,7 @@
   height: 24;
   x: 50%-11;
   y: 75%+4;
+  fill: #c90a04;
 }
 
 #steps_img {
@@ -49,6 +50,7 @@
   height: 24;
   x: 50%-11;
   y: 75%+4;
+  fill: deepskyblue;
 }
 
 #cals_img {
@@ -56,6 +58,7 @@
   height: 24;
   x: 50%-11;
   y: 75%+4;
+  fill: orange;
 }
 
 #floors_img {
@@ -63,6 +66,7 @@
   height: 24;
   x: 50%-11;
   y: 75%+4;
+  fill: greenyellow;
 }
 
 #distance_img {
@@ -70,6 +74,7 @@
   height: 24;
   x: 50%-11;
   y: 75%+4;
+  fill: cyan; 
 }
 
 #date {
