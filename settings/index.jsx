@@ -6,7 +6,7 @@ registerSettingsPage(({ settings }) => (
       title=
         {
           <Text bold align="center">
-            {`${APP_NAME} Customisations`}
+            {`${APP_NAME} Customization`}
           </Text>
         }
     >
@@ -29,23 +29,22 @@ registerSettingsPage(({ settings }) => (
     </Section>
 
     <Section>
-      <Text>UI Color</Text>
+      <Text>Color Customizations</Text>
         <ColorSelect
           settingsKey="color"
           colors=
             {[
-              {color: "aliceblue"},
-              {color: "orchid"},
-              {color: "palegoldenrod"},
-              {color: "bisque"},
+              {color: "white"},
+              {color: "lightpink"},
+              {color: "turquoise"},
               {color: "coral"},
               {color: "darkorange"},
               {color: "greenyellow"},
-              {color: "lavender"},
-              {color: "lavenderblush"},
-              {color: "snow"},
-              {color: "white"},
-              {color: "whitesmoke"},
+              {color: "wheat"},
+              {color: "springgreen"},
+              {color: "deepskyblue"},
+              {color: "khaki"},
+              {color: "orchid"},
               {color: "yellow"}
             ]}
         />

@@ -9,13 +9,11 @@
     <text id="timeSecs" class="colorConfigurable" />
 
     <image id="heartrate_img" href="icons/heart_rate.png" />
-    <text id="heartrate" class="stats" fill="#c90a04" />
+    <text id="heartrate" class="stats" fill="#ca3433" />
 
-    <!-- <arc id="steps_gauge" class="colorConfigurable" /> -->
     <image id="steps_img" href="icons/steps.png" />
     <text id="steps" class="stats" fill="deepskyblue" />
 
-    <!-- <arc id="cals_gauge" class="colorConfigurable" /> -->
     <image id="cals_img" href="icons/calories.png" />
     <text id="cals" class="stats" fill="orange" />
 
