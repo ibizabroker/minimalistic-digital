@@ -1,6 +1,7 @@
 import * as messaging from "messaging";
 import { settingsStorage } from "settings";
 import { DEFAULT_MODEL } from "../common/constants";
+import "fitbit-google-analytics/companion"
 
 messaging.peerSocket.onopen = () => {
   restoreSettings();

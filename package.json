@@ -15,7 +15,8 @@
     "wipeColor": "#ffffff",
     "requestedPermissions": [
       "access_heart_rate",
-      "access_activity"
+      "access_activity",
+      "access_internet"
     ],
     "buildTargets": [
       "atlas",
@@ -27,5 +28,8 @@
   "scripts": {
     "build": "fitbit-build",
     "debug": "fitbit"
+  },
+  "dependencies": {
+    "fitbit-google-analytics": "^1.2.0"
   }
 }
